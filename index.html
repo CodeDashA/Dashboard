@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chart Dashboard</title>
+</head>
+<body>
+    <h1>Graphs Visualization Dashboard </h1>
+    <div class="dashboard">
+        <div class="chart">
+            <canvas id="myChart" style="width:300px; height:200px"></canvas>
+            <h6>The pie chart visualizes participation data between "Male" and "Female" groups. The chart indicates the percentage contribution of each group, with tooltips displaying exact percentages on hover. The total participation is represented, providing a quick and intuitive understanding of the distribution between the two groups.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="barChart" style="width:300px; height:200px"></canvas>
+            <h6>The bar chart visualizes the same participation data, with "Male" and "Female" represented as bars. The chart title is "Participation," and the y-axis scale is adjusted to display decimal values. Tooltips show the exact decimal values when hovering over each bar.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="gbarChart" style="width:300px; height:200px"></canvas>
+            <h6>This chart displays participation over three years (2012, 2014, 2016) for both "Male" and "Female" groups. The bars are grouped by year, showing the contribution of each gender. The chart's title is "Participation," and the y-axis scale is adjusted for decimal values.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="lineChart" style="width:300px; height:200px"></canvas>
+            <h6>The line chart represents the participation trends of "Male" and "Female" groups over three years. Each line corresponds to a gender, and data points are marked for each year. The chart title is "Participation," and the y-axis scale is adjusted for decimal values.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="scatterChart" style="width:300px; height:200px"></canvas>
+            <h6>This scatter chart visualizes the performance vs. enjoyment relationship. Each point represents a data pair (x, y). The chart's title is "Performance vs Enjoyment," and both axes are scaled between 0 and 1.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="scatterColorChart" style="width:300px; height:200px"></canvas>
+            <h6>Similar to the previous scatter chart, this one adds color to differentiate "Male" and "Female" data points. The legend indicates the color code for each group.</h6>
+        </div>
+        <div class="chart">
+            <canvas id="bubbleChart" style="width:300px; height:200px"></canvas>
+            <h6>The bubble chart adds a third dimension, representing "Performance vs Enjoyment vs Preparation." Each bubble's size indicates the level of preparation. The chart's title is "Performance vs Enjoyment vs Preparation."</h6>
+        </div>
+        <div class="chart">
+            <canvas id="bubbleColorChart" style="width:300px; height:200px"></canvas>
+            <h6>This version of the bubble chart introduces color to differentiate "Male" and "Female" bubbles. The legend indicates the color code for each group.</h6>
+        </div>
+  
+    </div>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+</html>
